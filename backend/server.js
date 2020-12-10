@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 
 import connectToDB from './config/db.js'
 import primesRouter from './routes/primes.js'
-import userRouter from './routes/user.js'
+import usersRouter from './routes/users.js'
 
 let startTime = new Date()
 
@@ -20,7 +20,7 @@ app.get('/', (request, response) => {
 })
 
 app.use('/api/primes', primesRouter)
-app.use('/api/user', userRouter)
+app.use('/api/users', usersRouter)
 
 
 // starting the server app

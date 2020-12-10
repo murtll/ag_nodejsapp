@@ -6,11 +6,18 @@ const UserSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        email : {
+        gender : {
             type: String,
-            required: true,
-            unique: true
-        }
+            required: true
+        },
+        birthDate : {
+            type: Date,
+            required: true
+        },
+        interests : [{
+            type: String,
+            required: true
+        }]
     }
 )
 
