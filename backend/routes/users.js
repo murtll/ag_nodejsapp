@@ -76,7 +76,7 @@ router.delete('/', async(request, response) => {
     
         response.json(result)
     } catch (error) {
-        response.status(400).send('Error : ' + error)
+        response.status(400).send({"error": error})
     }
 })
 
@@ -89,7 +89,7 @@ router.post('/add', async(request, response) => {
         }
 
     } catch (error) {
-        response.status(400).send('Error : ' + error)
+        response.status(400).send({"error": error})
     }
 })
 
